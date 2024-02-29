@@ -1,12 +1,14 @@
 
-import { AppBar, Toolbar, Box, Typography, styled } from '@mui/material';
+import { useState } from 'react';
 
+import { AppBar, Toolbar, Box, Typography, IconButton, Drawer, List, styled } from '@mui/material';
+import { Menu } from '@mui/icons-material';
 
 import { Link } from 'react-router-dom';
 
 //components
-// import CustomButtons from './CustomButtons';
-// import Search from './Search';
+import CustomButtons from './CustomButtons';
+import Search from './Search';
 
 const StyledHeader = styled(AppBar)`
     background: #2874f0;
@@ -31,6 +33,9 @@ const PlusImage = styled('img')({
     marginLeft: 4
 })
 
+const CustomButtonWrapper = styled(Box)`
+    margin: 0 50px 0 auto;
+`
 
 
 const Header = () => {
@@ -44,15 +49,20 @@ const Header = () => {
 
                 <Component>
                     <img src={logoURL} alt="Logo" style={{ width: 75 }} />
-                    <Box>
+                    <Box style={{ display: 'flex' }}>
                         <SubHeading>Explore&nbsp;
                             <Box component="span" style={{ color: '#FFE500' }}>
                                 Plus
                             </Box>
                         </SubHeading>
-
+                        <PlusImage src={subURL} alt="SubURL" />
                     </Box>
                 </Component>
+                <Search></Search>
+                <CustomButtonWrapper>
+                    <CustomButtons />
+                </CustomButtonWrapper>
+
 
             </Toolbar>
         </StyledHeader>

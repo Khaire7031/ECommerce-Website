@@ -2,8 +2,8 @@
 from codecarbon import OfflineEmissionsTracker
 import requests
 
-# Website = "https://www.viit.ac.in/"
-Website = "https://www.muskfoundation.org/"
+Website = "https://www.viit.ac.in/"
+# Website = "https://www.muskfoundation.org/"
 
 
 tracker = OfflineEmissionsTracker(country_iso_code="IND")
