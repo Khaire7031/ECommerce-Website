@@ -1,7 +1,12 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useSyncExternalStore } from 'react';
 
 import { Box, Typography, Badge, Button, styled } from '@mui/material';
 import { ShoppingCart } from '@mui/icons-material';
+
+// Components
+import LoginDailog from '../Login/LoginDailog';
+
+
 
 const Wrapper = styled(Box)`
     display: flex;
@@ -32,15 +37,23 @@ const LoginButton = styled(Button)`
 
 
 export default function CustomButtons() {
+
+    const [open, setOpen] = useState(false);
+
+    const openDialog = () => {
+        setOpen(true);
+    }
+
     return (
         <Wrapper>
-            <LoginButton varient='contained'>Login</LoginButton>
+            <LoginButton varient='contained' onClick={() => openDialog()}>Login</LoginButton>
             <Typography style={{ marginTop: 3, width: 135 }}>Become a Seller</Typography>
             <Typography style={{ marginTop: 3 }}>More</Typography>
             <Container>
                 <ShoppingCart></ShoppingCart>
                 <Typography>Cart</Typography>
             </Container>
+            <LoginDailog open={open} setOpen={setOpen}></LoginDailog>
         </Wrapper>
     )
 }
