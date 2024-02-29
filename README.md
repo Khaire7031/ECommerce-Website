@@ -20,6 +20,7 @@ This is a simple e-commerce website project designed to showcase various feature
   - HTML
   - CSS
   - JavaScript
+  - Node js
   - React.js (or any other frontend framework/library)
 
 - Backend:
