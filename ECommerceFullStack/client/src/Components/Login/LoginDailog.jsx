@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { AppBar, Toolbar, Box, styled, TextField, Button, Typography } from '@mui/material';
-// import Button from '@mui/material/Button';
-import Dialog from '@mui/material/Dialog';
-// import DialogActions from '@mui/material/DialogActions';
-// import DialogContent from '@mui/material/DialogContent';
-// import DialogContentText from '@mui/material/DialogContentText';
-// import DialogTitle from '@mui/material/DialogTitle';
 
+import Dialog from '@mui/material/Dialog';
+import { AuthentiCateSignUp } from '../../service/api.js';
+import { DataContext } from '../../context/DataProvider.jsx';
 
 // Style 
 const Component = styled(Box)`
@@ -89,6 +86,8 @@ export default function LoginDailog({ open, setOpen }) {
 
     const [account, setToggleAccount] = useState(accountIntialization.login);
     const [signup, setSignup] = useState(signUpIntializeValues);
+
+    const { setAccount } = useContext(DataContext);
     const handleClose = () => {
         setOpen(false);
         setToggleAccount(accountIntialization.login)
@@ -105,8 +104,19 @@ export default function LoginDailog({ open, setOpen }) {
         console.log(signup);
     }
 
-    const signUpUser = () => {
+    const signUpUser = async () => {
         // 43 3
+        try {
+            let responce = await AuthentiCateSignUp(signup);
+            console.log("Responce : ", responce)
+            if (!responce) {
+                return;
+            }
+            handleClose();
+            setAccount(signup.firstname);
+        } catch (error) {
+            console.log("Sign is not possible No response from backend")
+        }
     }
     return (
         <Dialog open={open} onClose={handleClose} PaperProps={{ sx: { maxWidth: 'unset' } }}>

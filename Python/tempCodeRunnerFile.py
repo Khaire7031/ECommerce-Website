@@ -1,2 +1,0 @@
-
-    tracker2.start()
