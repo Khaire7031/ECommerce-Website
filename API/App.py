@@ -59,6 +59,3 @@ def add_product():
         return render_template('AddProduct.html')
     else:
         return render_template('AddProduct.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
