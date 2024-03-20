@@ -6,8 +6,8 @@ from Products import products
 
 app = Flask(__name__)
 
-
-
+# Temporary cart data stored in a Python dictionary for each user
+carts = {}
 
 
 @app.route('/')
@@ -59,3 +59,32 @@ def add_product():
         return render_template('AddProduct.html')
     else:
         return render_template('AddProduct.html')
+    
+@app.route('/AddToCart', methods=['POST'])
+def AddToCart():
+    data = request.get_json()
+    user_id = data.get('user_id')
+    product_id = data.get('product_id')
+    quantity = data.get('quantity', 1)
+
+    # Add the product to the user's cart or update the quantity if it's already in the cart
+    # Map  Cart product -> quantity 
+    # Map  Carts  User --> Cart 
+
+    cart = carts.get(user_id, {})
+    cart[product_id] = cart.get(product_id, 0) + quantity
+    carts[user_id] = cart
+
+    return jsonify(cart)
+
+# View Cart
+@app.route('/viewCart', methods=['GET'])
+def view_cart():
+    # Get the user_id from the query parameter
+    user_id = request.args.get('user_id')
+    print(user_id)
+
+    return render_template('Cart.html')
+    
+if __name__ == '__main__':
+    app.run(debug=True)

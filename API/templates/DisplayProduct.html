@@ -8,9 +8,9 @@
           <h5 class="card-title">{{ product.name }}</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary">{{ product.price }}</h6>
           <p class="card-text">{{ product.description }}</p> 
-          <!-- Pass product ID, name, and price as separate arguments -->
-          <button type="button" class="btn btn-light" onclick="AddToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">Add to Cart</button>
-          <!--<button type="button" class="btn btn-dark">Rating</button> -->
+
+          <button type="button" class="btn btn-light" onclick="AddToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">Add to Cart</button> 
+          <button type="button" class="btn btn-dark">Rating</button> 
         </div>
     </div>
     {% endfor %}
