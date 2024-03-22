@@ -13,7 +13,7 @@ def index():
 def all_products():
     return jsonify({"products": products})
 
-@app.route('/add_product', methods=['POST'])
+@app.route('/add_product', methods=['GET','POST'])
 def add_product():
     data = request.get_json()
     if not data:
@@ -27,6 +27,24 @@ def add_product():
     }
     products.append(new_product)
     return jsonify(new_product), 201
+
+@app.route('/addProduct', methods=['GET','POST'])
+def addProduct():
+    if request.method == 'POST':
+        data = request.get_json()
+        if not data:
+            return jsonify({'error': 'Invalid JSON data'}), 400
+
+        new_product = {
+            'id': len(products) + 1,
+            'name': data.get('name'),
+            'price': data.get('price'),
+            'description': data.get('description')
+        }
+        products.append(new_product)
+        return jsonify(new_product), 201
+    else:
+        return render_template('add_product_form.html')
 
 @app.route('/cart', methods=['GET'])
 def view_cart():
