@@ -100,5 +100,17 @@ def delete_from_cart():
 
     return jsonify(cart[user_id])
 
+
+@app.route('/search/<item>', methods=['GET'])
+def search(item):
+    print('Item : ', item)
+
+    search_results = []
+    for product in products:
+        if item in product['name'].lower():
+            search_results.append(product)
+
+    return jsonify({'results': search_results})
+
 if __name__ == '__main__':
     app.run(debug=True)
