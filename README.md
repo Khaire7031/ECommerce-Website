@@ -29,6 +29,8 @@ This is a simple e-commerce website project designed to showcase various feature
   - HTML
   - CSS
   - JavaScript
+    
+- Backend:
   - Flask
 
 
@@ -40,5 +42,12 @@ This is a simple e-commerce website project designed to showcase various feature
 1. Clone the repository:
    ```bash
    git clone [<repository-url>](https://github.com/Khaire7031/ECommerce-Website.git)
+   
+2. Change the directory:
+   ```bash
+   cd UI3
+2. Run the Python File:
+   ```bash
+   python app.py
 
 Feel free to customize this template based on your specific project requirements and features.
