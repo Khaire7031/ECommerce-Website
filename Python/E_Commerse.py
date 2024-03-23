@@ -67,6 +67,7 @@ product3 = Product(3, "Keyboard", 50, "Ergonomic keyboard with RGB backlighting.
 product4 = Product(4, "Laptop Mac Book", 2000, "Powerful laptop with macOS operating system.")
 product5 = Product(5, "Dell Laptop", 1500, "Durable laptop with Windows operating system.")
 product6 = Product(6, "Ipad", 1250, "Tablet device with Retina display.")
+product6 = Product(7, "Ipad-154", 3052, "Tablet device with no Retina display.")
 
 
 customer = Customer("John Doe", "john@example.com")

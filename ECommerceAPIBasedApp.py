@@ -69,7 +69,7 @@ def view_cart():
     total_amount = 0
 
     # Iterate through the cart items
-    for product_id, quantity in cart.items():
+    for product_id,  quantity in cart.items():
         # Try to find the product by its id in the products list
         product = next((p for p in products if p['id'] == product_id), None)
         if product:
