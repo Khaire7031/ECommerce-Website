@@ -110,7 +110,7 @@ def search(item):
         if item in product['name'].lower():
             search_results.append(product)
 
-    return jsonify({'results': search_results})
+    return jsonify({' results': search_results})
 
 if __name__ == '__main__':
     app.run(debug=True)
