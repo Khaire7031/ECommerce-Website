@@ -14,13 +14,7 @@ This is a simple e-commerce website project designed to showcase various feature
 - Admin dashboard (optional, if applicable)
 - Responsive design for mobile and desktop devices
 
-## Sequence diagram
- - Sign Up Functionality
- - Login Functionality
- - Add to Cart Functionality
- - Product Order Functionality
- - Customer Care Functionality
-![Sequence diagram](https://github.com/Khaire7031/ECommerce-Website/assets/121940469/41041389-d413-4ca5-b72d-ffca6f6b36b0)
+
 
 
 ## Technologies Used
