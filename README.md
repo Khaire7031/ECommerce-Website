@@ -24,8 +24,13 @@ To get started with the ecommerce-demo project, follow these steps:
 Clone the `ecommerce-demo` repository using Git:
 
 ```bash
-git clone https://github.com/ratracegrad/ecommerce-demo
+git clone [https://github.com/ratracegrad/ecommerce-demo](https://github.com/Khaire7031/ECommerce-Website.git)
 cd ecommerce-demo
+```
+
+```bash
+cd website
+```
 
 Install dependencies with this command:
 ```bash
@@ -41,6 +46,17 @@ Run the application with this command:
 node app.js
 ```
 
+## Running on a Server
+
+this project is running on globally on 
+
+## Tech Stack
+* AngularJS
+* Node.js
+* Express.js
+* Bootstrap
+* ui-Router
+  
 ## Usage
 
 1. Register for an account or log in if you already have one.
@@ -48,10 +64,6 @@ node app.js
 3. View and manage your cart contents by adding, removing, or updating items.
 4. Proceed to checkout, enter your shipping and payment details, and place your order.
 5. As an admin, access the admin dashboard to manage products and view orders.
-
-## Running on a Server
-
-this project is running on globally on 
 
 ## Customization
 
