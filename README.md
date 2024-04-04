@@ -15,12 +15,31 @@ This project is an e-commerce website built using HTML, CSS, JavaScript, Node.js
 
 To get started with this project, follow these steps:
 
-1. Clone or download the repository to your local machine.
-2. Install Node.js and npm if you haven't already.
-3. Install project dependencies by running `npm install` in the project directory.
-4. Set up a MongoDB database and configure the connection in the `config.js` file.
-5. Start the server by running `npm start`.
-6. Open your web browser and navigate to `http://localhost:3000` to view the website.
+## Getting Started
+
+To get started with the ecommerce-demo project, follow these steps:
+
+### 1. Clone the Repository
+
+Clone the `ecommerce-demo` repository using Git:
+
+```bash
+git clone https://github.com/ratracegrad/ecommerce-demo
+cd ecommerce-demo
+
+Install dependencies with this command:
+```bash
+npm install
+```
+
+Go to website Folder:
+```bash
+cd website
+```
+Run the application with this command:
+```bash
+node app.js
+```
 
 ## Usage
 
@@ -32,7 +51,7 @@ To get started with this project, follow these steps:
 
 ## Running on a Server
 
-To run this project on a server, you can follow the same steps as mentioned above. Additionally, you may need to configure your server environment to host Node.js applications.
+this project is running on globally on https://green-4.onrender.com/
 
 ## Customization
 
