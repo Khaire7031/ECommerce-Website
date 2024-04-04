@@ -13,10 +13,6 @@ This project is an e-commerce website built using HTML, CSS, JavaScript, Node.js
 
 ## Getting Started
 
-To get started with this project, follow these steps:
-
-## Getting Started
-
 To get started with the ecommerce-demo project, follow these steps:
 
 ### 1. Clone the Repository
@@ -25,9 +21,9 @@ Clone the `ecommerce-demo` repository using Git:
 
 ```bash
 git clone [https://github.com/ratracegrad/ecommerce-demo](https://github.com/Khaire7031/ECommerce-Website.git)
-cd ecommerce-demo
 ```
 
+Go to website Folder:
 ```bash
 cd website
 ```
@@ -37,10 +33,6 @@ Install dependencies with this command:
 npm install
 ```
 
-Go to website Folder:
-```bash
-cd website
-```
 Run the application with this command:
 ```bash
 node app.js
