@@ -20,7 +20,7 @@ To get started with the ECommerce-Website project, follow these steps:
 Clone the `ecommerce-demo` repository using Git:
 
 ```bash
-git clone [https://github.com/ratracegrad/ecommerce-demo](https://github.com/Khaire7031/ECommerce-Website.git)
+git clone https://github.com/Khaire7031/ECommerce-Website.git
 ```
 
 Go to website Folder:
