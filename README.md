@@ -1,47 +1,14 @@
-# E-Commerce Website
+# E-Commerce Website Project
 
-This is a simple e-commerce website project designed to showcase various features and functionalities of an online shopping platform.
+This project is an e-commerce website built using HTML, CSS, JavaScript, Node.js, Express.js, and MongoDB. It includes features such as user registration, product listing, shopping cart management, and user authentication.
 
-## Features
+### Home
+![Screenshot (133)](https://github.com/Khaire7031/ECommerce-Website/assets/121940469/86bde982-deeb-4d0f-9f6d-fc0c53dcd04a)
 
-- User authentication (Sign up, Login, Logout)
-- Product browsing and searching
-- Product categories and filtering
-- Shopping cart functionality
-- Checkout process
-- Order tracking
-- User profile management
-- Admin dashboard (optional, if applicable)
-- Responsive design for mobile and desktop devices
+### Home
+![Screenshot (134)](https://github.com/Khaire7031/ECommerce-Website/assets/121940469/c9914763-a873-4349-82d7-b0d702a0f644)
 
 
+### Cart
+![Screenshot (135)](https://github.com/Khaire7031/ECommerce-Website/assets/121940469/393389fe-8b52-4e6a-a96f-a3deb76a2c0e)
 
-
-## Technologies Used
-
-- Frontend:
-  - HTML
-  - CSS
-  - JavaScript
-    
-- Backend:
-  - Flask
-
-
-
-
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone [<repository-url>](https://github.com/Khaire7031/ECommerce-Website.git)
-   
-2. Change the directory:
-   ```bash
-   cd UI3
-2. Run the Python File:
-   ```bash
-   python app.py
-
-Feel free to customize this template based on your specific project requirements and features.
