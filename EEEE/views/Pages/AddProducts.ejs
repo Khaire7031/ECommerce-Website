@@ -1,0 +1,38 @@
+<div class="container addProduct mt-2 mb-3">
+    <h3 class="centre">Add Product</h3>
+    <form id="productForm" method="post" action="/addProducts">
+        <div class="mb-3">
+            <label for="id" class="form-label">Product ID</label>
+            <input type="number" class="form-control" id="id" name="id" required placeholder="Ex : 28">
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" required placeholder="Laptop">
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="2"
+                placeholder="Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen."></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="price" required placeholder="₹ 1000">
+        </div>
+        <div class="mb-3">
+            <label for="brand" class="form-label">Brand</label>
+            <input type="text" class="form-control" id="brand" name="brand" placeholder="Microsoft Surface">
+        </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <input type="text" class="form-control" id="category" name="category" placeholder="Laptops">
+        </div>
+        <div class="mb-3">
+            <label for="thumbnail" class="form-label">Thumbnail URL</label>
+            <input type="url" class="form-control" id="thumbnail" name="thumbnail" required
+                value="https://cdn.dummyjson.com/product-images/8/thumbnail.jpg">
+        </div>
+        <div class="centre">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
