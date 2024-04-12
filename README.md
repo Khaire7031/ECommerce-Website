@@ -19,19 +19,19 @@ To get started with the ECommerce-Website project, follow these steps:
 
 Clone the ecommerce-demo repository using Git:
 
-bash
+```bash
 git clone https://github.com/Khaire7031/ECommerce-Website.git
-
+```
 
 Go to website Folder:
-bash
+```bash
 cd website
-
+```
 
 Install dependencies with this command:
-bash
+```bash
 npm install
-
+```
 
 Run the application with this command:
 bash
