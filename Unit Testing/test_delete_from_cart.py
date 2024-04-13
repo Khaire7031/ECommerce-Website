@@ -7,7 +7,7 @@ class TestDeleteFromCartAPI(unittest.TestCase):
     def test_delete_product_success(self):
         # url = 'https://green-4.onrender.com/delete_from_cart'
         url = 'http://localhost:3000/delete_from_cart'
-        data = {'userId': '660906daf8903aae91b99771', 'productId': 1}
+        data = {'userId': '660906daf8903aae91b99771', 'productId': 3}
         response = requests.post(url, json=data) 
 
         print(" 1 : ",response.json())  
